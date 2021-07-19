@@ -10,4 +10,9 @@ public class HelloUnderWorld {
     public String sayHello(){
         return "Hello Underworld !!";
     }
+
+    @GetMapping(path="/hello-bean")
+    public HelloBean sayHelloBean(){
+        return new HelloBean("Hello Underworld !!");
+    }
 }
